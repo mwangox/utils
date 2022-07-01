@@ -25,7 +25,6 @@ func Initialize() {
 	if err := viper.ReadInConfig(); err != nil {
 		log.Fatal("Failed to read config file:", err)
 	}
-	log.Println("All property configurations loaded successfully")
 }
 
 func GetStringProperty(key string, defaultValue ...string) string {
